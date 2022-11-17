@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santander</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h2>Santander</h2>
+    <p>
+        <p id="dDisponible"></p>
+        <img src="Pics/cajero.gif" alt="">
+    </p>
+    <p>Ingresa el monto y luego da click en extraer para retirar tu dinero: <br/>
+    <input type="number" min="1" value="1" step="1" id="nDinero"/> <input type="button" value="Extraer" id="buttonExtraer">
+    <input type="button" value="Limpiar" id="buttonClear"></p>    
+    <p id="resultado"></p>
+    <canvas width="2000" height="285px" id="billetes"></canvas><hr/>
+    <p id="reporte">Reporte:</p> <br/>
+    
+    <script src="billetes.js"></script>
+    <script src="cajero.js"></script>
+</body>
+</html>
